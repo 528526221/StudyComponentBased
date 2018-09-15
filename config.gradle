@@ -1,0 +1,26 @@
+ext{
+    isLoginModuleAlone = false //false 作为组件，true 作为工程
+    android = [
+            compileSdkVersion : 26,
+            buildToolsVersion : "26.0.1",
+            minSdkVersion    : 15,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+    depVersion = [
+            junitVersion : "4.12",
+            appcompatVersion : "26.+",
+            arouterApiVersin : "1.4.0",
+            arouterCompilerVersin : "1.2.1",
+            arouterRegisterVersin : "1.0.2"
+
+    ]
+    dependencies = [
+            junit : "junit:junit:${depVersion.junitVersion}",
+            appcompat : "com.android.support:appcompat-v7:${depVersion.appcompatVersion}",
+            arouterApi : "com.alibaba:arouter-api:${depVersion.arouterApiVersin}",
+            arouterCompiler : "com.alibaba:arouter-compiler:${depVersion.arouterCompilerVersin}"
+
+    ]
+}
